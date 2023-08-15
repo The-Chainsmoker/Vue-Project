@@ -1,0 +1,64 @@
+.mvdetailContainer .title {
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 0;
+  color: #ffffff;
+  background-color: black;
+}
+
+.mvdetailContainer .iconfont{
+  font-size: 21px;
+  margin:0 3px;
+}
+
+.mvdetailContainer .back{
+  width: 100px;
+}
+
+.mvdetailContainer .name{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mvdetailContainer .video video{
+  width: 98%;
+  margin: 0 1%;
+}
+
+.comment .video{
+  background: #000000;
+}
+
+
+.conmmentContainer{
+  margin-left: 10px;
+}
+
+.comment .mvName {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 15px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.conmmentContainer.singerPlay{
+  font-size: 14px;
+}
+
+.singerPlay .singer{
+  color: #396f84;
+}
+
+.singerPlay .playcount{
+  float: right;
+  color: #ccc;
+}
+
+.conmmentContainer .pubilc{
+  color: #ccc;
+}

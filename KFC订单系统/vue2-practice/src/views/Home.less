@@ -1,0 +1,104 @@
+.search {
+    background-color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    h2 {
+        margin-left: 2%;
+    }
+
+    .van-icon-search:before {
+        content: '\e710';
+        color: #ee0017;
+    }
+}
+
+.content {
+    background-color: #f0e7e7;
+
+    border-top: 1px solid transparent;
+
+    .my-swipe {
+        width: 97%;
+        margin: 12px auto;
+
+        .van-swipe-item {
+            color: #fff;
+            font-size: 20px;
+            line-height: 146px;
+            text-align: center;
+            background-color: #39a9ed;
+            height: 150px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    .hot-buy {
+        height: 50px;
+        margin-top: 8px;
+        overflow: hidden;
+        margin-left: 2%;
+        width: 100%;
+
+        .hot-text {
+            width: 100px;
+            height: 40px;
+            // 圆角边框
+            border-radius: 0 10px 0 0;
+            background: #e32831;
+            // 字体居中
+            text-align: center;
+            // 字体垂直居中  只有一行的时候才能使用
+            line-height: 40px;
+            color: white;
+            font-size: 14px;
+            //这里会造成内边距塌陷  给他父盒子  overflow:hidden;
+            margin-top: 5px;
+        }
+    }
+}
+
+// 热卖产品
+.shop-content {
+    overflow: auto;
+    background-color: #f0e7e7;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3%;
+    padding-bottom: 15%;
+
+    .pro-item {
+        text-align: center;
+        border-radius: 10px;
+        height: 190px;
+        width: calc(52% - 5px);
+        background: white;
+        //浮动
+        float: left;
+        margin-top: 10px;
+        margin-right: 10px;
+
+        .pro-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 10px;
+        }
+
+        .price {
+            color: #005ee5;
+        }
+    }
+
+    .pro-item:nth-child(2n) {
+        margin-right: 0px;
+    }
+
+
+}
